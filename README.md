@@ -46,3 +46,57 @@ This project aims to predict the future EUR to INR currency exchange rates using
 - Currency exchange rate prediction
 - Financial forecasting
 - AI-powered investment research
+
+🔧 TECHNICAL TERMS EXPLAINED:
+📈 1. Time Series
+Definition: A series of data points indexed in time order.
+Example in this project: Historical EUR to INR exchange rates over days or months.
+
+🔮 2. Forecasting
+Definition: Predicting future values based on past data patterns.
+In context: Predicting the future value of EUR to INR using past exchange rate data.
+
+🧠 3. Facebook Prophet
+Definition: A time series forecasting tool developed by Facebook (now Meta).
+Why use it? 
+- Works well with daily seasonality and irregular time series.
+- Automatically handles holidays, trends, and outliers.
+In this project: Used to forecast future currency exchange rates.
+
+📊 4. MSE (Mean Squared Error)
+Definition: A metric that tells us how close predictions are to the actual values.
+Formula: 
+    MSE = (1/n) * Σ(actualᵢ - predictedᵢ)²
+Interpretation: Lower MSE means better model accuracy.
+
+📈 5. R² Score (R-squared)
+Definition: A metric that shows how much variance in the actual data is explained by the model.
+Range: From 0 to 1.
+Interpretation:
+    1.0 → perfect prediction
+    0.0 → model fails to explain any variance
+In your project: An R² score closer to 1 indicates high prediction accuracy.
+
+📅 6. Date Indexing
+Definition: Using dates as the index for time series data.
+Why it matters: Time-based models like Prophet require data with a time index to track trends over time.
+
+🔁 7. Chronological Order
+Definition: Sorting data from the oldest date to the most recent.
+Why it’s used: Forecasting models need data to be in order to learn trends properly.
+
+📥 8. User Input Features
+Definition: Dynamic options where the user provides values.
+In this project:
+- Choose number of days to predict
+- Enter a specific future date
+- Select a custom date range for plotting
+
+📉 9. Prediction Interval (Upper & Lower Bound)
+Definition: A range around the predicted value that shows possible variation.
+Example: If predicted = 95, lower = 93, upper = 97 → the actual value is likely between 93 and 97.
+
+📊 10. Actual vs Predicted Graph
+Definition: A visual comparison of real (historical) data and forecasted values.
+Why it’s useful: Helps to quickly see how well the model performs.
+
